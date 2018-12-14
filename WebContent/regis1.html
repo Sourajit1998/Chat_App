@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<script>
+function checkForm(form)
+{
+ 
+	if(form.t1.value == "") 
+	  {
+	    alert("Error: UserName cannot be blank!");
+	    form.t1.focus();
+	    return false;
+	  }
+	  re = /^\w+$/;
+	  if(!re.test(form.t1.value)) 
+	  {
+	    alert("Error: UserName must contain only letters, numbers and underscores!");
+	    form.t1.focus();
+	    return false;
+	  }
+	  
+	  if(form.t5.value=="")
+	  {
+		  alert("Error: Phone number cannot be blank!");
+		    form.t5.focus();
+		    return false;
+	  }
+	  
+	  if(form.t5.value!="")
+	  {
+		 
+		  if(form.t5.value.length !=10) 
+		  {
+		      alert("Error: Enter a valid 10 digit Mobile number!");
+		      form.t5.focus();
+		      return false;
+		  }
+		  
+	  }
+	  
+	  if(form.t6.value=="")
+	  {
+		  alert("Error: Email id cannot be blank!");
+		    form.t6.focus();
+		    return false;
+	  }
+	  if(form.t2.value=="")
+	  {
+		  alert("Error: Password cannot be blank!");
+		    form.t2.focus();
+		    return false;
+	  }
+
+	  if(form.t2.value != "" && form.t2.value == form.t3.value) 
+	  {
+	    if(form.t2.value.length < 6) 
+	    {
+	      alert("Error: Password must contain at least six characters!");
+	      form.t2.focus();
+	      return false;
+	    }
+	    if(form.t2.value == form.t1.value) 
+	    {
+	      alert("Error: Password must be different from UserName!");
+	      form.t2.focus();
+	      return false;
+	    }
+	    re = /[0-9]/;
+	    if(!re.test(form.t2.value)) 
+	    {
+	      alert("Error: Password must contain at least one number (0-9)!");
+	      form.t2.focus();
+	      return false;
+	    }
+	    re = /[a-z]/;
+	    if(!re.test(form.t2.value)) 
+	    {
+	      alert("Error: Password must contain at least one lowercase letter (a-z)!");
+	      form.t2.focus();
+	      return false;
+	    }
+	    re = /[A-Z]/;
+	    if(!re.test(form.t2.value)) 
+	    {
+	      alert("Error: Password must contain at least one uppercase letter (A-Z)!");
+	      form.t2.focus();
+	      return false;
+	    }
+	  } 
+	  else 
+	  {
+	    alert("Error: Password field don't match!");
+	    form.t3.focus();
+	    return false;
+	  }
+
+	}
+
+
+</script>
+<head>
+<title>INDIAN_RAILWAYS |Chat_Application </title>
+<link rel="stylesheet" type="text/css" href="style3.css" >
+</head>
+<body>
+<center>
+<font color="blue" size="3">
+<h1><b>Welcome to Indian Railways Chat Application</b></h1>
+<p><marquee behavior="scroll" onmouseover="this.stop()" onmouseout="this.start()">Welcome to Indian Railways </marquee></p>
+<div class="bank-form">
+
+<h3 id="blink-text">Sorry!! Registration failed..Username already exists<br>Try Again!!</h3>
+<form action="regis" name="register" onsubmit="return checkForm(this);" id="registration" method="post">
+<table>
+<h2><b> REGISTRATION FORM</b></h2>
+ <a href="http://www.indianrailways.gov.in/" target="_blank"><img src="ir-logo.jpg" title="Indian-Railways" size="3"></a>
+
+<tr>
+<td>Enter Username</td>
+<td><input type="text" name="t1" id="button" placeholder="Enter your username" title="UserName must not be blank and contain only letters, numbers and underscores." ></td>
+</tr><br>
+
+<tr>
+<td>Enter Password</td>
+<td><input type="password" name="t2"id="button" placeholder="Enter your password" title="Password must contain at least 6 characters, including UPPER/lowercase and numbers." ></td>
+</tr><br>
+
+<tr>
+<td>Confirm Password</td>
+<td><input type="password" name="t3"id="button" placeholder="Re-Enter your password" title="Please enter the same Password as above." ></td>
+</tr><br>
+
+<tr>
+<td>Gender</td>
+<td><input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="female">Female
+<input type="radio" name="gender" value="others">Other
+</td>
+</tr><br>
+
+<tr>
+<td>Enter Phone number</td>
+<td>
+<select id="ph">
+<option>+91</option>
+<option>+92</option>
+<option>+93</option>
+<option>+94</option>
+<option>+95</option>
+</select>
+<input type="number" name="t5"id="button" placeholder="Enter your phone number" title="Mobile number must be of 10 digits" ></td>
+</tr><br>
+
+<tr>
+<td>Enter Email-id</td>
+<td><input type="email" name="t6"id="button" placeholder="Enter your email-id" title="Email id must be a valid one" ></td>
+</tr><br>
+</table>
+<br><br>
+<input type="submit" value="SIGNUP" id="butt">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input type="reset" value="RESET" id="butt">
+<br><br>
+
+<h4><b>Already Have An Account?</b></h4>
+<style type="text/css">
+a:link{color:blue;}
+a:visited{color:navy;}
+a:hover{color:orange;}
+a:active{color:green;}
+
+</style>
+<a href="Login1.html"><i>Click Here to Login</i></a>
+
+</b>
+</form>
+</div>
+</font>
+</center>
+</body>
+</html>

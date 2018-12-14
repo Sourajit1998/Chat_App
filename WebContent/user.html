@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<script>
+function checkForm(form)
+{
+  
+  
+  if(form.t5.value=="")
+  {
+	  alert("Error:Please enter your New Phone Number or existing Phone Number !!");
+	    form.t5.focus();
+	    return false;
+  }
+  
+  if(form.t5.value!="")
+  {
+	 
+	  if(form.t5.value.length !=10) 
+	  {
+	      alert("Error: Enter a valid 10 digit Mobile number!");
+	      form.t5.focus();
+	      return false;
+	  }
+	  
+  }
+  
+  if(form.t6.value=="")
+  {
+	  alert("Error: Please enter your New  Email id or existing Email-id !!");
+	    form.t6.focus();
+	    return false;
+  }
+
+  
+
+}
+</script>
+<head>
+<title>IR |Chat_App |Profile_Update </title>
+<link rel="stylesheet" type="text/css" href="style5.css" >
+</head>
+<body>
+<center>
+<font color="blue" size="3">
+<p><marquee behavior="scroll" onmouseover="this.stop()" onmouseout="this.start()">Welcome to Indian Railways Chat Application</marquee></p>
+<div class="bank-form">
+<h4 id="blink-text">SORRY!! SOMETHING WRONG HAPPENED!!<br>**PLEASE ENTER VALID USERNAME WHICH YOU HAVE ENTERED AT THE TIME OF REGISTRATION !!</h4>
+<form action="EditProfileServlet" name="register" onsubmit="return checkForm(this);" id="registration" method="post">
+<table>
+<h2><b> PROFILE UPDATION</b></h2>
+ <a href="http://www.indianrailways.gov.in/" target="_blank"><img src="ir-logo.jpg"   title="Indian-Railways" size="3"></a>
+
+
+
+
+<tr>
+<td> New Phone number</td>
+<td>
+<select id="ph">
+<option>+91</option>
+<option>+92</option>
+<option>+93</option>
+<option>+94</option>
+<option>+95</option>
+</select>
+<input type="number" name="t5" id="button" placeholder="Enter your phone number" title="Mobile number must be of 10 digits" ></td>
+</tr><br>
+
+<tr>
+<td>New Email-id</td>
+<td><input type="email" name="t6"id="button" placeholder="Enter your email-id" title="Email id must be a valid one" ></td>
+</tr><br>
+</table>
+<br><br>
+<input type="submit" value="UPDATE" id="butt">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input type="reset" value="RESET" id="butt">
+<br><br>
+
+<style type="text/css">
+a:link{color:blue;}
+a:visited{color:navy;}
+a:hover{color:orange;}
+a:active{color:green;}
+
+</style>
+<a href="Home1.html"><i>Click Here to Go Back to Home Page</i></a>
+
+</b>
+</form>
+</div>
+</font>
+</center>
+</body>
+</html>

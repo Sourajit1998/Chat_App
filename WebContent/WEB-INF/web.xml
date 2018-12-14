@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+<welcome-file-list>
+		  <welcome-file>registration.html</welcome-file>
+	 </welcome-file-list>
+    <servlet>
+    	<display-name>RegistrationServlet</display-name>
+    	 <servlet-name>RegistrationServlet</servlet-name>
+        <servlet-class>test.Registration</servlet-class>
+     </servlet>
+    <servlet-mapping>
+         <servlet-name>RegistrationServlet</servlet-name>
+        <url-pattern>/regis</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+		  <display-name>LoginServlet</display-name>
+		  <servlet-name>LoginServlet</servlet-name>
+		  <servlet-class>test.LoginServlet</servlet-class>
+	 </servlet>
+	 <servlet-mapping>
+	    	<servlet-name>LoginServlet</servlet-name>
+		    <url-pattern>/LoginServlet</url-pattern>
+	 </servlet-mapping>
+	 
+	  <servlet>
+		  <display-name>ProfileServlet</display-name>
+		  <servlet-name>ProfileServlet</servlet-name>
+		  <servlet-class>test.ProfileServlet</servlet-class>
+	 </servlet>
+	 <servlet-mapping>
+		  <servlet-name>ProfileServlet</servlet-name>
+		  <url-pattern>/ProfileServlet</url-pattern>
+	 </servlet-mapping>
+	 
+	 <servlet>
+	 <display-name>EditProfileServlet</display-name>
+		  <servlet-name>EditProfileServlet</servlet-name>
+		  <servlet-class>test.EditProfile</servlet-class>
+	 </servlet>
+	 <servlet-mapping>
+		  <servlet-name>EditProfileServlet</servlet-name>
+		  <url-pattern>/EditProfileServlet</url-pattern>
+	 </servlet-mapping>
+	 
+	  <servlet>
+	 <display-name>ChangePassword</display-name>
+		  <servlet-name>ChangePassword</servlet-name>
+		  <servlet-class>test.ChangePassword</servlet-class>
+	 </servlet>
+	 <servlet-mapping>
+		  <servlet-name>ChangePassword</servlet-name>
+		  <url-pattern>/ChangePassword</url-pattern>
+	 </servlet-mapping>
+	 
+	 <servlet>
+	 <display-name>LogoutServlet</display-name>
+		  <servlet-name>LogoutServlet</servlet-name>
+		  <servlet-class>test.LogoutServlet</servlet-class>
+	 </servlet>
+	 <servlet-mapping>
+		  <servlet-name>LogoutServlet</servlet-name>
+		  <url-pattern>/LogoutServlet</url-pattern>
+	 </servlet-mapping>
+
+	 
+    
+</web-app>

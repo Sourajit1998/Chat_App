@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<script>
+function Valid()
+{
+     var a=document.register.t1.value;
+     var b=document.register.t2.value;
+     if(a==""||a==null)
+     {
+    	 alert("Please enter your Username");
+         return false;
+     }
+     if(b==""||b==null)
+     {
+    	 alert("Please enter your Password");
+         return false;
+     }
+}
+</script>
+   
+<head>
+<title>IR |Chat_App |Logout_Page </title>
+<link rel="stylesheet" type="text/css" href="style1.css" >
+</head>
+<body>
+<center>
+<font color="blue" size="3">
+<h1><b>Indian Railways Chat Application</b></h1>
+<p><marquee behavior="alternate" onmouseover="this.stop()" onmouseout="this.start()">Welcome to Indian Railways </marquee></p>
+<div class="bank-form">
+<h3 id="blink-text">USER SUCCESSFULLY LOGGED OUT </h3>
+
+
+<form action="LoginServlet" method="post" name="register" onsubmit="return Valid();" id="login">
+
+<table>
+<img src="login.png" width="100px" height="100px">
+<h2><b>LOGIN HERE</b></h2>
+<a href="http://www.indianrailways.gov.in/" target="_blank"><img src="ir-logo.jpg" title="Indian-Railways" size="1"></a>
+
+<tr>
+<td>USERNAME</td>
+<td><input type="text" name="t1" id="button" placeholder="Enter your username" required></td>
+</tr><br>
+
+<tr>
+<td>PASSWORD</td>
+<td><input type="password" name="t2"id="button" placeholder="Enter your Password" required></td>
+</tr><br>
+
+</table>
+<br>
+
+<input type="submit" value="LOGIN" id="butt">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input type="reset" value="RESET" id="butt">
+
+
+</form>
+</div>
+</font>
+</center>
+</body>
+</html>

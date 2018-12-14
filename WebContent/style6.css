@@ -1,0 +1,20 @@
+@charset "ISO-8859-1";
+body{
+	background-image:url(chat.jpg);
+	background-repeat:no-repeat;
+	 font-family:sans-serif;
+	background-size:100% 1200px;
+}
+.menu img {
+	float:left;
+	width:200px;
+}
+h1{
+	text-align: center;
+	width:100% 900px;
+	padding:30px 0px;
+}
+
+
+
+

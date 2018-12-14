@@ -1,0 +1,69 @@
+body{
+	background-image:url(wallpaper.jpg);
+	background-repeat:no-repeat;
+	 font-family:sans-serif;
+	background-size:100% 1200px;
+}
+
+p{
+	color:blue;
+	width:100% 900px;
+	background-color: white;
+	opacity: 0.9;
+	padding:5px 0px;
+}
+#blink-text{
+	color:red;
+	text-align: center;
+	width:0% 0%;
+	background-color:yellow;
+	opacity:0.8;
+	padding:10px 0px;
+	text-decoration: blink;
+	
+}
+.bank-form{
+	text-align:center;
+	margin:40px 400px;
+}
+#registration{
+	width:100% 900px;
+	background-color:#C390A1;
+	opacity:0.9;
+	padding:50px 0px;
+}
+
+#t5{
+	width:200px;
+	padding:10px;
+	border-radius:5px;
+	outline:0px;
+}
+
+#button{
+	width:250px;
+	padding:10px;
+	border-radius:5px;
+	outline:0px;	
+}
+#button:hover{
+    cursor: text;
+    background-color: beige;
+    color:black;
+}
+
+#butt{
+	width:120px;
+	height:50px;
+	border-radius:20px;
+	outline:0px;
+	background-color:black;
+	color:white;
+	font-size:18px;
+}
+.bank-form:hover{
+    cursor: auto;
+    color:#0000a0;
+}
+
+
